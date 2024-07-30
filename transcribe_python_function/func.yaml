@@ -1,0 +1,8 @@
+schema_version: 20180708
+name: transcribeit
+version: 0.0.13
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 256
