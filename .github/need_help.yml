@@ -1,0 +1,45 @@
+name: Need Help
+description: Get assistance with using the project or understanding the code
+title: "[HELP] "
+labels: help wanted
+body:
+  - type: dropdown
+    id: help_type
+    attributes:
+      label: What do you need help with?
+      description: Select the area where you need assistance.
+      options:
+        - Oracle Functions
+        - Understanding the code
+        - Oracle Visual Builder Cloud Service
+        - Setting up the environment
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Describe your issue or question
+      description: Provide a clear and concise description of what you need help with.
+      placeholder: Please describe your issue or question here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevant_code
+    attributes:
+      label: Relevant Code or Output
+      description: If applicable, include the code you’re working with or any output/error messages.
+      placeholder: Paste your code or error message here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other details or context that might help us assist you better.
+      placeholder: Any other relevant details...
+    validations:
+      required: false
